@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education website using HTML, CSS and JavaScript</title>
+
+    <!-- fontawesome icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google fonts (MONTSERRAT) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Play&family=Roboto+Mono&family=VT323&display=swap"
+        rel="stylesheet">
+
+    <!-- SWIPER JS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href="home.html">
+                <h4>ARC Ltd.</h4>
+            </a>
+            <ul class="nav_menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+<!-- ====================EnD of NAVBAR========== -->
+
+
+<section class="contact">
+    <div class="container contact_container">
+      <aside class="contact_aside">
+        <div class="aside_image">
+            <img src="./images/contact.svg" >
+        </div>
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam enim molestias possimus.</p>
+        <ul class="contact_details">
+            <li><i class="fa-solid fa-phone"></i>
+            <h5>+91-8235567755</h5>
+            </li>
+            <li><i class="fa-solid fa-envelope"></i>
+                <h5>Ram@gmail.com</h5>
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i>
+            <h5>Dhanbad, Jharkhand</h5>
+            </li>
+
+
+        </ul>
+
+        <ul class="contact_socials">
+            <li><a href="https://facebook.com">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+             <li><a href="https://twitter.com">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li><a href="https://instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li><a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+      </aside> 
+      
+      <form class="contact_form">
+        <div class="form_name">
+            <input type="text" name="First Name" placeholder="First Name" required>
+            <input type="text" name="Last Name" placeholder="Last Name" required>
+        </div>
+        <input type="email" name="Email Address" placeholder="Your Email Address" required>
+        <textarea name="Message"  rows="7" placeholder="Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>ARC Ltd.</h4>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ex quisquam similique?</p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <p>+91-9460692771</p>
+                <p>Ram@gmail.com</p>
+            </div>
+
+            <div>
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="footer_copyright">
+            <small>Copyright &copy; ARC Ltd. Dhanbad</small>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            //when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
